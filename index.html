@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 class="text-center pt-3">Welcome to Maxtechies.</h1>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+
+        <style>
+        .wrapper{
+            border: 03px solid green;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            background: url(https://i.assetzen.net/i/bjHUygtUssTB/w:auto/h:400/q:70.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        </style>
+    </head>
+
+    <body class="bg-light" boddy>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-4 bg-white m-auto rounded-top wrapper">
+                    <h2 class="text-center pt-3">Register Here.</h2>
+                    <p class="text-center text-muted lead">Register to get updates.</p>
+                    <form action="#" onsubmit="onsignup()">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Enter First Name" id="fname"/>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Enter Last Name" id="lname"/>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                            <input type="text" class="form-control" placeholder="Enter Email" id="email"/>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                            <input type="text" class="form-control" placeholder="Enter Password" id="pass"/>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">Signup Now</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            function onsignup(){
+                const fname = document.getElementById("fname").value
+                console.log(fname)
+                const lname = document.getElementById("lname").value
+                console.log(lname)
+                const email = document.getElementById("email").value
+                console.log(email)
+                const password = document.getElementById("pass").value
+                console.log(password)
+
+            }
+        </script>
+
+
+    </body>
+</html>
